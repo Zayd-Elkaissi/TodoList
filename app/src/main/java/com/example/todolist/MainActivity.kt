@@ -15,7 +15,6 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         val myDataset = mutableListOf<String>()
 
-
         val input :EditText = findViewById(R.id.input)
         val btnAdd :Button = findViewById(R.id.buttonAdd)
        // val btnDelete:Button = findViewById(R.id.btnDelete)
@@ -27,7 +26,6 @@ class MainActivity : AppCompatActivity() {
             recyclerView.adapter = ItemAdapter(this, myDataset)
 
             input.setText("")
-
         }
     }
 }
